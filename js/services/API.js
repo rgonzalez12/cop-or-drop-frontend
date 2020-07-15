@@ -40,6 +40,20 @@ class API {
         })
     }
 
-
+    static favoriteSneaker() {
+        const fav = parseInt(event.target.parentElement.querySelector("p").innerText.split(" ")[0])
+        let updateFavs = fav + 1 
+        event.target.parentElement.querySelector("p").innerText = `${updateFavs} favorites`
+        const id = parseInt(event.target.parentElement.id)
+        fetch(`http://localhost:3000/sneakers/${id}`,{
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            favorite: updateFavs 
+          })
+      })
+    }
 
 }
