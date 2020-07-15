@@ -15,5 +15,19 @@ class Sneaker{
         this.renderSneaker()
     }
 
+    renderAnime(){
+        const sneakerContainer = document.getElementById('sneaker-container')
+        const sneakerCard = document.createElement('div')
+        sneakerCard.classList.add('anime-card')
+        sneakerCard.id = this.id
+        sneakerCard.innerHTML += this.sneakerHTML()
+        sneakerContainer.appendChild(sneakerCard)
+        sneakerCard.addEventListener('click', e => {
+          if (e.target.className.includes('delete')) this.deleteSneaker(e)
+        })
+    }
+
     
+
+
 }
