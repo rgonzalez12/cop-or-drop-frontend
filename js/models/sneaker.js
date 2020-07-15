@@ -40,7 +40,27 @@ class Sneaker{
       }) 
     }
 
-
-
+    sneakerHTML(){
+        return `
+          <h2 class="header">${this.model}</h2>
+          <img src="${this.image}" width="100" />
+          <h5>Manufacturer: ${this.manufacturer}</h5>
+          <h5>Colorway: ${this.colorway}</h5>
+          <h5>Size: ${this.size}</h5>
+          <h5>Condition: ${this.condition}</h5>
+          <h5>Estimated Value: ${this.est_value}</h5>
+          <p> ${this.favorite} favorites </p>
+          <p> ${this.cop} cops </p>
+          <p> ${this.drop} drops </p>
+          <button onclick=API.favoriteSneaker()> Favorite </button>
+          <button onclick=API.copSneaker()> Cop </button>
+          <button onclick=API.dropSneaker()> Drop </button>
+          <button class= 'delete'> Delete? </button>
+          <h5>Summary:</h5>
+          ${this.opinions.map(function(opinion){
+            return (`Asked by ${opinion.name}.
+            ${opinion.summary}`)
+        })}`
+    }
 
 }
