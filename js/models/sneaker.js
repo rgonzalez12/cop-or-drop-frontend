@@ -15,10 +15,10 @@ class Sneaker{
         this.renderSneaker()
     }
 
-    renderAnime(){
+    renderSneaker(){
         const sneakerContainer = document.getElementById('sneaker-container')
         const sneakerCard = document.createElement('div')
-        sneakerCard.classList.add('anime-card')
+        sneakerCard.classList.add('sneaker-card')
         sneakerCard.id = this.id
         sneakerCard.innerHTML += this.sneakerHTML()
         sneakerContainer.appendChild(sneakerCard)
@@ -27,7 +27,7 @@ class Sneaker{
         })
     }
 
-    
+
 
 
 }
