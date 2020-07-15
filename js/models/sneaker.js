@@ -56,9 +56,9 @@ class Sneaker {
           <button onclick=API.copSneaker()> Cop </button>
           <button onclick=API.dropSneaker()> Drop </button>
           <button class= 'delete'> Delete? </button>
-          <h5>Summary:</h5>
+          <h5>Summary: </h5>
           ${this.opinions.map(function(opinion){
-            return (`Asked by ${opinion.name}.
+            return (`${opinion.name} says:
             ${opinion.summary}`)
         })}`
     }
