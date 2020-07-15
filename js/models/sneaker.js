@@ -27,6 +27,19 @@ class Sneaker{
         })
     }
 
+    deleteSneaker(event) {
+        const sneakerId = parseInt(event.target.parentElement.id)
+        fetch(`http://localhost:3000/sneakers/${sneakerId}`, {
+          method: 'DELETE',
+          headers: {
+          'Content-Type': 'application/json'
+          }
+      })
+      .then (()=> {
+        document.getElementById('sneaker-container').removeChild(document.getElementById(sneakerId))
+      }) 
+    }
+
 
 
 
