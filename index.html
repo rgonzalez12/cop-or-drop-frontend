@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cop or Drop</title>
+  <meta name="description" content="Cop or Drop">
+  <meta name="Raymond Gonzalez" content="SitePoint">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1>Cop or Drop</h1>
+    <div id="container">
+      <div id="form">
+        <h3>New Sneaker</h3>
+        <form id="sneaker-form">
+          <input type="text" name="manufacturer" placeholder="manufacturer"/>
+          <br/>
+          <input type="text" name="model" placeholder="model"/>
+          <br/>
+          <input type="text" name="colorway" placeholder="colorway"/>
+          </br>
+          <input type="text" name="size" placeholder="size"/>
+          <br/>
+          <input type="text" name="condition" placeholder="condition"/>
+          <br/>
+          <input type="text" name="est_value" placeholder="est_value"/>
+          <br/>
+          <input type="text" name="image" placeholder="image"/>
+          <br/>
+          <h3>Add your name and summary/explanation of the shoe here!</h3>
+          <input type="text" name="name" placeholder="name"/>
+          <br/>
+          <input type="text" name="summary" placeholder="summary"/>
+          <br/>
+          <input type="submit" value="Submit"/>
+        </form>
+      </div>
+      <div id="sneaker-container">
+      </div>
+    </div>
+
+  <script src="js/services/API.js"></script>
+  <script src="js/models/sneaker.js"></script>
+  <script src="js/index.js"></script>
+  
+</body>
+
+</html>
