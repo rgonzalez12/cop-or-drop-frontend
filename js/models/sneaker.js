@@ -1,4 +1,4 @@
-class Sneaker{
+class Sneaker {
     constructor(id, manufacturer, model, colorway, size, condition, est_value, image, favorite, cop, drop, opinions) {
         this.id = id
         this.manufacturer = manufacturer
