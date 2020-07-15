@@ -72,4 +72,20 @@ class API {
       })
     }
 
+    static dropSneaker() {
+        const drop = parseInt(event.target.parentElement.querySelector("p").innerText.split(" ")[0])
+        let updateDrops = drop + 1 
+        event.target.parentElement.querySelector("p").innerText = `${updateDrops} drops`
+        const id = parseInt(event.target.parentElement.id)
+        fetch(`http://localhost:3000/sneakers/${id}`,{
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            drop: updateDrops
+          })
+      })
+    }
+
 }
