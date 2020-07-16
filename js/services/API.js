@@ -41,9 +41,9 @@ class API {
     }
 
     static favoriteSneaker() {
-        const fav = parseInt(event.target.parentElement.querySelector("p").innerText.split(" ")[0])
+        const fav = parseInt(event.target.parentElement.querySelector(".favorite").innerText.split(" ")[0])
         let updateFavs = fav + 1 
-        event.target.parentElement.querySelector("p").innerText = `${updateFavs} favorites`
+        event.target.parentElement.querySelector(".favorite").innerText = `${updateFavs} favorites`
         const id = parseInt(event.target.parentElement.id)
         fetch(`http://localhost:3000/sneakers/${id}`,{
           method: 'PATCH',
@@ -57,9 +57,9 @@ class API {
     }
 
     static copSneaker() {
-        const cop = parseInt(event.target.parentElement.querySelector("p").innerText.split(" ")[0])
+        const cop = parseInt(event.target.parentElement.querySelector(".cop").innerText.split(" ")[0])
         let updateCops = cop + 1 
-        event.target.parentElement.querySelector("p").innerText = `${updateCops} cops`
+        event.target.parentElement.querySelector(".cop").innerText = `${updateCops} cops`
         const id = parseInt(event.target.parentElement.id)
         fetch(`http://localhost:3000/sneakers/${id}`,{
           method: 'PATCH',
@@ -73,9 +73,9 @@ class API {
     }
 
     static dropSneaker() {
-        const drop = parseInt(event.target.parentElement.querySelector("p").innerText.split(" ")[0])
+        const drop = parseInt(event.target.parentElement.querySelector(".drop").innerText.split(" ")[0])
         let updateDrops = drop + 1 
-        event.target.parentElement.querySelector("p").innerText = `${updateDrops} drops`
+        event.target.parentElement.querySelector(".drop").innerText = `${updateDrops} drops`
         const id = parseInt(event.target.parentElement.id)
         fetch(`http://localhost:3000/sneakers/${id}`,{
           method: 'PATCH',

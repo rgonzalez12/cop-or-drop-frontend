@@ -48,10 +48,10 @@ class Sneaker {
           <h5>Colorway: ${this.colorway}</h5>
           <h5>Size: ${this.size}</h5>
           <h5>Condition: ${this.condition}</h5>
-          <h5>Estimated Value: ${this.est_value}</h5>
-          <p> ${this.favorite} favorites </p>
-          <p> ${this.cop} cops </p>
-          <p> ${this.drop} drops </p>
+          <h5>Estimated Value: $ ${this.est_value}</h5>
+          <p class="favorite"> ${this.favorite} favorites </p>
+          <p class="cop"> ${this.cop} cops </p>
+          <p class="drop"> ${this.drop} drops </p>
           <button onclick=API.favoriteSneaker()> Favorite </button>
           <button onclick=API.copSneaker()> Cop </button>
           <button onclick=API.dropSneaker()> Drop </button>
