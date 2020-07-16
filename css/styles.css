@@ -1,6 +1,10 @@
 body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
+    color: #00ff37;
+    background: url(https://eskipaper.com/images/sneakers-background-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     }
 
     h1{
@@ -8,6 +12,13 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    }
+
+    h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;  
     }
 
     #container {
@@ -27,8 +38,8 @@ body {
       float:left;
       width:393px;
       height: 555px;
-      background-color: rgb(179, 11, 11);
-      color: #1ebe40;
+      background-color: rgb(255, 0, 0);
+      color: #00ff37;
       margin:15px;
       text-align: center;
     }
